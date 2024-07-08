@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "pinia": "^2.1.7",
-    "plugin-light": "^1.3.12",
+    "plugin-light": "^1.3.13",
     "press-ui": "^1.3.39",
     "qrcode.vue": "^3.4.1",
     "t-comm": "^1.3.90",
