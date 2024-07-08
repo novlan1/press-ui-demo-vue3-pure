@@ -1,1 +1,0 @@
-import"./validator-CMi1mmGD.js";import{g as s,a as r,s as e}from"./component-handler-BybOX7us.js";function g(t){return{data(){return{...s(this,t)}},watch:{...r(t)},methods:{setData(a){e.call(this,a)}}}}export{g};
