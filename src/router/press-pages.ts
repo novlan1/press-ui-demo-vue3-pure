@@ -7,10 +7,6 @@ const disableList = [
 
 
 export function getPressUIPages() {
-  // const pages = require('../pages/index/page-config.json');
-
-  console.log('pages', pages)
-
   const result = pages.pages.reduce((acc: any, item) => {
     const res = item.list.reduce((ac: any, it) => {
       const { url, navigationStyle } = it;
@@ -31,7 +27,7 @@ export function getPressUIPages() {
             title: (TitleMap['zh-CN'] as any)?.[componentName],
             hideNavigator: navigationStyle === 'custom',
           },
-          component: () => import(`src/packages/press-${componentName}/demo.vue`),
+          component: () => import(`src/pages/press/${componentName}/${componentName}.vue`),
         });
       }
       return ac;
@@ -42,7 +38,6 @@ export function getPressUIPages() {
   }, []);
 
 
-  console.log('result', result)
   return result;
 }
 

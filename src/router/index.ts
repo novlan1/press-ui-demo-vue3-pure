@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import { getPressUIPages } from './press-pages'
 
 
@@ -23,10 +22,7 @@ const router = createRouter({
             title: 'Press UI Pure',
           },
         },
-        {
-          path: 'button/button',
-          component: () => import('../pages/press/button/button.vue')
-        },
+        ...getPressUIPages(),
       ]
     }
   ]

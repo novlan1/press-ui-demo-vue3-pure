@@ -1,4 +1,4 @@
-## press-ui-demo-vue2-pure
+## press-ui-demo-vue3-pure
 
 Press UI 适配 非 uni-app 的 Vue3 的项目。
 

@@ -4,9 +4,9 @@ const {replaceToVue3 } = require('../../src/press-ui/packages/press-ui/script/wa
 
 function main() {
   initWithPressUI();
-  execCommand('rm -rf src/packages/press-hor-swiper-light', process.cwd(), 'inherit');
+  // execCommand('rm -rf src/packages/press-hor-swiper-light', process.cwd(), 'inherit');
 
-  replaceToVue3()
+  // replaceToVue3()
 }
 
 

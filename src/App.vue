@@ -3,8 +3,14 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <RouterView />
+  <div style="height:100%;">
+    <RouterView />
+  </div>
 </template>
 
-<style scoped>
+<style lang="scss" src="src/utils/style/demo.scss"></style>
+<style>
+html {
+  --window-top: 44px;
+}
 </style>

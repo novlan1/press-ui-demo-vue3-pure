@@ -33,6 +33,7 @@ coverage
 src/pages
 src/packages
 src/utils
+src/library
 
 
 pnpm-lock.yaml

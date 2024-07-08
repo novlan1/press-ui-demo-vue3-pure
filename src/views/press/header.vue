@@ -36,6 +36,7 @@
 import PressIconPlus from '../../packages/press-icon-plus/press-icon-plus.vue';
 
 export default {
+  name: 'PressHeader',
   components: {
     PressIconPlus,
   },
