@@ -1,0 +1,1 @@
+const r=/scroll|auto|overlay/i;function n(l,e){e===void 0&&(e=window);let t=l;for(;t&&t.tagName!=="HTML"&&t.tagName!=="BODY"&&t.nodeType===1&&t!==e;){const{overflowY:o}=window.getComputedStyle(t);if(r.test(o))return t;t=t.parentNode}return e}function i(l){let e=l;return l.startsWith("#")||(e=`#${l}`),e=`${e} > .uni-scroll-view > .uni-scroll-view`,e}export{n as a,i as g};
