@@ -19,7 +19,7 @@ const router = createRouter({
           component: () => import('src/pages/index/index.vue'),
           meta: {
             showBack: false,
-            title: 'Press UI Pure',
+            title: 'Press UI Vue3 Pure',
           },
         },
         ...getPressUIPages(),

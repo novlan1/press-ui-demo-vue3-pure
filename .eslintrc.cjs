@@ -8,6 +8,9 @@ module.exports = {
     'eslint:recommended',
     '@vue/eslint-config-typescript'
   ],
+  globals: {
+    getCurrentPages: true,
+  },
   parserOptions: {
     ecmaVersion: 'latest'
   }

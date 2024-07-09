@@ -28,3 +28,7 @@ declare interface Window {
 
   getCurrentPages?: any;
 }
+
+declare interface Global {
+  getCurrentPages: any;
+}
