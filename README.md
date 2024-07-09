@@ -6,4 +6,4 @@ Press UI 适配 非 uni-app 的 Vue3 的项目。
 
 扫码下方二维码体验：
 
-<img src="./image/demo-vue3-pure.gif" width="300" />
+<img src="./image/demo-vue3-pure.gif" width="200" />
