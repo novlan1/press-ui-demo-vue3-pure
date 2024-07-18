@@ -1,0 +1,1 @@
+function e(n){const r=/[A-Z]/g;return n.replace(r,o=>`-${o}`).toLowerCase()}function i(n){return n===void 0?"":Array.isArray(n)?n.filter(r=>r!=null&&r!=="").map(r=>i(r)).join(";"):typeof n=="string"?n:Object.keys(n).filter(r=>n[r]!=null&&n[r]!=="").map(r=>[e(r),[n[r]]].join(":")).join(";")}export{i as s};

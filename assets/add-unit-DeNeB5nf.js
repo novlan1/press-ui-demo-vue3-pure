@@ -1,0 +1,1 @@
+import{b as t}from"./validator-C_cgqHAw.js";const p=/^-?\d+(\.\d+)?$/;function x(r){if(r!=null)return p.test(`${r}`)?`${r}px`:r}function e(r,n=!1){return t(r)?n?`${r}px`:Number(r):/(rpx|upx)$/.test(r)?n?`${uni.upx2px(parseInt(r,10))}px`:Number(uni.upx2px(parseInt(r,10))):n?`${parseInt(r,10)}px`:parseInt(r,10)}export{x as a,e as g};
