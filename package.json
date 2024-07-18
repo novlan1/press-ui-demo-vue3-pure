@@ -19,6 +19,7 @@
     "init": "node script/watch/init"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "pinia": "^2.1.7",
     "plugin-light": "^1.3.13",
     "press-ui": "^2.0.10",
