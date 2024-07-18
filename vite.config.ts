@@ -46,5 +46,8 @@ export default defineConfig({
     esbuildOptions: {
     }
   },
-  base: './'
+  base: './',
+  server: {
+    port: 5002,
+  },
 })
