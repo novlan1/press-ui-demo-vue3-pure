@@ -1,0 +1,1 @@
+import{n as e}from"./press-popup-y_CuzBdV.js";const n=["showTitle","closeIcon","arrowIcon","title","button","borderButton","zIndex","popupClass","closeOnClickOverlay","customStyle"].reduce((o,t)=>(o[t]=e[t],o),{});export{n as P};
