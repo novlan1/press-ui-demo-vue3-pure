@@ -3,7 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
-import { initDemoI18n } from './utils/i18n/i18n';
+import { initDemoI18n } from './packages/locale/demo-lang';
 import { initPureDemoMixin } from 'src/utils/mixin/pure-mixin';
 import { initPureAdapter } from 'src/packages/common/pure/adapter';
 

@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import { RouterView } from 'vue-router';
+import { setLang } from './utils/i18n/i18n';
+setLang();
 </script>
 
 <template>
