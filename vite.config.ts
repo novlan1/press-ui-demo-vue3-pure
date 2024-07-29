@@ -10,7 +10,14 @@ import type { Plugin }from 'vite'
 
 const customElements = [
   'uni-scroll-view',
-  'uni-image'
+  // image
+  'uni-image',
+  // dialog
+  'Button',
+  // circle
+  'cover-view',
+  // notice-bar
+  'navigator'
 ]
 
 export default defineConfig({
