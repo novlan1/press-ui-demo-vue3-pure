@@ -5,8 +5,10 @@ import path from 'path';
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
-import { ifdefVitePlugin, aliasForLibrary } from 'plugin-light/lib/plugin';
+import { ifdefVitePlugin, aliasForLibrary, genVersionWebVitePlugin  } from 'plugin-light/lib/plugin';
 import type { Plugin }from 'vite'
+import { BUILD_NAME_MAP } from 't-comm/lib/v-console/config';
+
 
 const customElements = [
   'uni-scroll-view',
@@ -39,6 +41,11 @@ export default defineConfig({
         'press-ui',
       ],
       target: 'src/library',
+    }),
+    genVersionWebVitePlugin({
+      buildName: BUILD_NAME_MAP.build,
+      commitName: BUILD_NAME_MAP.commit,
+      delay: 10,
     })
   ],
   resolve: {
