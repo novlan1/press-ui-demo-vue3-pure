@@ -1,0 +1,1 @@
+import{q as u,I as o}from"./index-EgE5uNPY.js";function a(){if(u())return 0;const{statusBarHeight:t}=o();return t}function g(t,i){return new Promise(n=>{const r=t.$el;if(r){const e=r.querySelector(i);e||n({});const c=e.getBoundingClientRect();n(c);return}uni.createSelectorQuery().in(t).select(i).boundingClientRect().exec((e=[])=>n(e[0]))})}export{a,g};
