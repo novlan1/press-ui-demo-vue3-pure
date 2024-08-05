@@ -1,6 +1,6 @@
 {
   "name": "press-ui-demo-vue3-pure",
-  "version": "2.0.20",
+  "version": "2.1.0",
   "private": true,
   "description": "简单、易用的跨端组件库，兼容 Vue2 和 Vue3，同时支持 uni-app和普通 Vue 项目",
   "repository": {
@@ -22,7 +22,7 @@
     "@popperjs/core": "^2.11.8",
     "pinia": "^2.1.7",
     "plugin-light": "^1.3.13",
-    "press-ui": "^2.0.20",
+    "press-ui": "^2.1.3",
     "qrcode.vue": "^3.4.1",
     "swiper-next": "^0.1.1",
     "t-comm": "^1.3.90",
@@ -45,6 +45,7 @@
     "aegis-mp-sdk": "^1.39.1",
     "babel-plugin-component": "^1.1.1",
     "eslint": "^8.57.0",
+    "eslint-config-light-vue3": "^0.0.5",
     "eslint-plugin-vue": "^9.23.0",
     "glob": "^10.4.3",
     "npm-run-all2": "^6.2.0",
