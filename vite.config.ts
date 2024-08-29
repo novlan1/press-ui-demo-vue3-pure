@@ -33,7 +33,7 @@ export default defineConfig({
     }),
     vueJsx(),
     ifdefVitePlugin({
-      context: { H5: true, VUE3: true },
+      context: { H5: true, VUE3: true, VUE2: false, },
       type: ['css', 'js', 'html'],
     }) as Plugin,
     aliasForLibrary({
