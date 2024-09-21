@@ -16,7 +16,7 @@ import PressPopupCell from './packages/press-popup-cell/press-popup-cell.vue';
 import App from './App.vue'
 import router from './router'
 
-const app = createApp(App)
+const app = createApp(App as any)
 
 app.use(createPinia())
 app.use(router)
@@ -25,7 +25,7 @@ initDemoI18n(app);
 initPureDemoMixin(app)
 initPureAdapter(app)
 
-app.component('PressPopupCell', PressPopupCell)
+app.component('PressPopupCell', PressPopupCell as any)
 
 // @ts-ignore
 // eslint-disable-next-line vue/multi-word-component-names, vue/no-reserved-component-names

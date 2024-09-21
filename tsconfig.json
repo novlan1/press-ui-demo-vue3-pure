@@ -13,7 +13,9 @@
       "dom"
     ],
     "types": [
-      "@dcloudio/types"
+      "@dcloudio/types",
+      "@types/jest",
+      "@types/node",
     ],
     "noImplicitAny": false,
     "ignoreDeprecations": "5.0",
@@ -24,5 +26,13 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue"
+  ],
+  "exclude": [
+    "src/press-ui/**/*",
+    "src/library/**/*",
+    "src/**/__tests__/*",
+    "src/packages/**/*",
+    "src/pages/**/*",
+    "src/library/**/*",
   ]
 }
