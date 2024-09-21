@@ -5,7 +5,10 @@ import path from 'path';
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
-import { ifdefVitePlugin, aliasForLibrary, genVersionWebVitePlugin  } from 'plugin-light/lib/plugin';
+import { aliasForLibrary } from '@plugin-light/vite-plugin-alias-for-library'
+import { genVersionWebVitePlugin } from '@plugin-light/vite-plugin-gen-version'
+import { ifdefVitePlugin } from '@plugin-light/vite-plugin-ifdef'
+
 import type { Plugin }from 'vite'
 import { BUILD_NAME_MAP } from 't-comm/lib/v-console/config';
 
