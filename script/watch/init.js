@@ -1,6 +1,6 @@
-const { execCommand } = require('t-comm');
+// const { execCommand } = require('t-comm');
 const { initWithPressUI } = require('../../src/press-ui/packages/press-ui/script/watch/init');
-const {replaceToVue3 } = require('../../src/press-ui/packages/press-ui/script/watch/vue3')
+// const {replaceToVue3 } = require('../../src/press-ui/packages/press-ui/script/watch/vue3')
 
 function main() {
   initWithPressUI();

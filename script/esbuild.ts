@@ -1,8 +1,8 @@
 // import type { Plugin } from 'vite'
-import fs from 'fs'
+import fs from 'fs';
 
 export const esbuildPatchPlugin = {
-  name: "react-virtualized-",
+  name: 'react-virtualized-',
   // transform(source, id) {
   //   return source;
   // },
@@ -14,17 +14,16 @@ export const esbuildPatchPlugin = {
       //     /press-ui(.*).js/
       // },
       async (args) => {
-        console.log('args', args)
-        const text = await fs.promises.readFile(args.path, "utf8");
-        console.log('text', text)
+        console.log('args', args);
+        const text = await fs.promises.readFile(args.path, 'utf8');
+        console.log('text', text);
         return {
           contents: text.replace(
             'import { bpfrpt_proptype_WindowScroller } from "../WindowScroller.js";',
-            ""
+            '',
           ),
         };
-      }
-    );
+      });
   },
   // setup(build) {
   //   build.onLoad(
@@ -44,4 +43,4 @@ export const esbuildPatchPlugin = {
   //     }
   //   );
   // },
-}
+};
