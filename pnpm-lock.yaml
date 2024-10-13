@@ -23,11 +23,11 @@ specifiers:
   npm-run-all2: ^6.2.0
   pinia: ^2.1.7
   plugin-light: ^1.3.13
-  press-ui: ^2.1.22
+  press-ui: 2.2.0-alpha.1
   qrcode.vue: ^3.4.1
   sass: ^1.77.6
   swiper-next: ^0.1.1
-  t-comm: ^1.3.101
+  t-comm: ^1.3.106
   typescript: ~5.6.2
   vite: ^5.3.1
   vite-babel-plugin: ^0.0.2
@@ -42,10 +42,10 @@ dependencies:
   '@popperjs/core': 2.11.8
   pinia: 2.1.7_e6ha6u5okt2gm2emhovmzvnau4
   plugin-light: 1.3.13_76bnfqqwdwnlypqkdqctkmhg6i
-  press-ui: 2.1.22
+  press-ui: 2.2.0-alpha.1
   qrcode.vue: 3.4.1_vue@3.4.31
   swiper-next: 0.1.1
-  t-comm: 1.3.101
+  t-comm: 1.3.106
   vite-babel-plugin: 0.0.2_vite@5.3.3
   vue: 3.4.31_typescript@5.6.2
   vue-router: 4.4.0_vue@3.4.31
@@ -2231,7 +2231,7 @@ packages:
   /@plugin-light/shared/0.0.11:
     resolution: {integrity: sha512-6MLWFJypBAQEORej387EQdmG4b6kqHPlOpUguH8bS3gu0E2KzQtIQ7cJXjtvu58mPXtZHnSwlCdqSeU4/7eHQg==}
     dependencies:
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -2241,7 +2241,7 @@ packages:
     resolution: {integrity: sha512-slS/sQ7A//uDBihOQbHdoknFn8tKZmlzKOTUeEx2YGce8obNX6CkQdDh/kO1xH1/BaJzuk+LXQkwVLFv6GsJVQ==}
     dependencies:
       '@plugin-light/shared': 0.0.11
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -6873,7 +6873,7 @@ packages:
     dev: false
 
   /jsbn/0.1.1:
-    resolution: {integrity: sha512-UVU9dibq2JcFWxQPA6KCqj5O42VOmAY3zQUfEKxU0KpTGXwNoCjkX1e13eHNvw/xPynt6pU0rZ1htjWTNTSXsg==}
+    resolution: {integrity: sha1-peZUwuWi3rXyAdls77yoDA7y9RM=}
 
   /jsesc/0.5.0:
     resolution: {integrity: sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA==}
@@ -7887,7 +7887,7 @@ packages:
       progress-bar-webpack-plugin: 2.1.0
       rollup-plugin-visualizer: 5.12.0
       script-ext-html-webpack-plugin: 2.1.5
-      t-comm: 1.3.101
+      t-comm: 1.3.106
       uni-read-pages: 1.0.5
       unplugin-auto-import: 0.17.6
       unplugin-vue-components: 0.22.12_vue@3.4.31
@@ -8045,19 +8045,19 @@ packages:
   /press-ui/1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
     dependencies:
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
     dev: false
 
-  /press-ui/2.1.22:
-    resolution: {integrity: sha512-78QXARqgUBIJ+aBgUfDLvcudQ3yt0cizDBVTQb3tgyt1YCbxnXrvaX1CxFF4EW7P4nB1sMKnVl14+uB0US6EhA==}
+  /press-ui/2.2.0-alpha.1:
+    resolution: {integrity: sha512-Omy7LdUWjspMvDBImQA7ArlIkfmzoZxro/zQNPHVc4zBtRJCIdIbKJ280XUimKFwCYVmbjoWX4pZgqOmQfsm1g==}
     engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
       swiper-next: 0.1.1
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -9149,27 +9149,8 @@ packages:
     resolution: {integrity: sha512-Nk8c4lXvMB98MtbmjX7JwJRgJOL8fluecYCfCeYBznwmpOs8Bf15hLM6z4z71EDAhQVrQrI+wt1aLWSXZq+hXA==}
     dev: false
 
-  /t-comm/1.3.101:
-    resolution: {integrity: sha512-G10OSVS2dL22eYlYfX5h+tIxjRZ0r0wNpnMUepykm/SV9pL8PBzTP4C9AXChPqQxQ2sSdWG+mIqGz+v6idUaHA==}
-    hasBin: true
-    peerDependencies:
-      canvas: ^2.6.1
-    dependencies:
-      '@babel/runtime': 7.24.7
-      '@commitlint/config-conventional': 17.8.1
-      axios: 1.7.2
-      cheerio: 1.0.0-rc.12
-      commander: 10.0.1
-      cron-parser: 4.9.0
-      qs: 6.12.2
-      request: 2.88.2
-      tar: 6.2.1
-    transitivePeerDependencies:
-      - debug
-    dev: false
-
-  /t-comm/1.3.104:
-    resolution: {integrity: sha512-0vlO9qOqoYgt/WozF/pxcfDM5lLLxnLkBXBuLrMk6AZ44D6xsxXgAyLAi/xWTAUWbUcFv9SX7Gsx7BN+a7L7zg==}
+  /t-comm/1.3.106:
+    resolution: {integrity: sha512-lSAJSgj+Lq5AqDjTOHqPexmpqOMs3GQFTNbIs1UI9rULEip3SAB/4ftqjC2v/MUI6eIXkEnkltaDQNcuj9RepQ==}
     hasBin: true
     peerDependencies:
       canvas: ^2.6.1
