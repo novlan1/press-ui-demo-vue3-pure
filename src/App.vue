@@ -1,7 +1,13 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import { RouterView } from 'vue-router';
 import { setLang } from './utils/i18n/i18n';
 setLang();
+
+onMounted(() => {
+  document.documentElement.style.setProperty('--window-top', '44px');
+});
+
 </script>
 
 <template>
@@ -12,7 +18,4 @@ setLang();
 
 <style lang="scss" src="src/utils/style/demo.scss"></style>
 <style>
-html {
-  --window-top: 44px;
-}
 </style>
