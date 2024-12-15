@@ -1,5 +1,5 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import { getPressUIPages } from './press-pages'
+import { createRouter, createWebHashHistory } from 'vue-router';
+import { getPressUIPages } from './press-pages';
 
 
 const router = createRouter({
@@ -23,9 +23,9 @@ const router = createRouter({
           },
         },
         ...getPressUIPages(),
-      ]
-    }
-  ]
-})
+      ],
+    },
+  ],
+});
 
-export default router
+export default router;

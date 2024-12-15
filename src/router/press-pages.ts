@@ -1,5 +1,5 @@
 import TitleMap from '../utils/i18n/title-i18n.json';
-import pages from '../pages/index/page-config.json'
+import pages from '../pages/index/page-config.json';
 
 const disableList = [
   'hor-swiper-light',
