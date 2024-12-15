@@ -23,7 +23,7 @@
     "lodash": "^4.17.21",
     "pinia": "^2.1.7",
     "plugin-light": "^1.3.13",
-    "press-ui": "2.2.7",
+    "press-ui": "2.2.12",
     "qrcode.vue": "^3.4.1",
     "swiper-next": "^0.1.1",
     "t-comm": "^1.3.106",
