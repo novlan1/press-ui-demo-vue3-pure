@@ -1,15 +1,15 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from 'node:url';
 
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 import path from 'path';
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 
-import { aliasForLibrary } from '@plugin-light/vite-plugin-alias-for-library'
-import { genVersionWebVitePlugin } from '@plugin-light/vite-plugin-gen-version'
-import { ifdefVitePlugin } from '@plugin-light/vite-plugin-ifdef'
+import { aliasForLibrary } from '@plugin-light/vite-plugin-alias-for-library';
+import { genVersionWebVitePlugin } from '@plugin-light/vite-plugin-gen-version';
+import { ifdefVitePlugin } from '@plugin-light/vite-plugin-ifdef';
 
-import type { Plugin }from 'vite'
+import type { Plugin } from 'vite';
 import { BUILD_NAME_MAP } from 't-comm/lib/v-console/config';
 
 
@@ -22,8 +22,8 @@ const customElements = [
   // circle
   'cover-view',
   // notice-bar
-  'navigator'
-]
+  'navigator',
+];
 
 export default defineConfig({
   plugins: [
@@ -36,7 +36,7 @@ export default defineConfig({
     }),
     vueJsx(),
     ifdefVitePlugin({
-      context: { H5: true, VUE3: true, VUE2: false, },
+      context: { H5: true, VUE3: true, VUE2: false },
       type: ['css', 'js', 'html'],
     }) as Plugin,
     aliasForLibrary({
@@ -49,22 +49,22 @@ export default defineConfig({
       buildName: BUILD_NAME_MAP.build,
       commitName: BUILD_NAME_MAP.commit,
       delay: 10,
-    })
+    }),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       src: path.resolve(__dirname, 'src'),
-      'press-ui': path.resolve(__dirname, 'src/library/press-ui')
+      'press-ui': path.resolve(__dirname, 'src/library/press-ui'),
     },
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
   optimizeDeps: {
     esbuildOptions: {
-    }
+    },
   },
   base: './',
   server: {
     port: 5002,
   },
-})
+});

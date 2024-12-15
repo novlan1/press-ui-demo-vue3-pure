@@ -51,7 +51,7 @@
     "aegis-mp-sdk": "^1.39.1",
     "babel-plugin-component": "^1.1.1",
     "eslint": "^8.57.0",
-    "eslint-config-light-vue3": "^0.1.6",
+    "eslint-config-light-vue3": "^0.1.7",
     "eslint-plugin-vue": "^9.23.0",
     "glob": "^10.4.3",
     "npm-run-all2": "^6.2.0",
