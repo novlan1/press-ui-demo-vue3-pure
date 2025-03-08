@@ -23,6 +23,7 @@ const customElements = [
   'cover-view',
   // notice-bar
   'navigator',
+  'Canvas',
 ];
 
 export default defineConfig({

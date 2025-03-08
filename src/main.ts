@@ -30,5 +30,8 @@ app.component('PressPopupCell', PressPopupCell as any);
 // @ts-ignore
 // eslint-disable-next-line vue/multi-word-component-names, vue/no-reserved-component-names
 app.component('Button', 'button');
+// eslint-disable-next-line vue/multi-word-component-names, vue/no-reserved-component-names
+// @ts-ignore
+app.component('Canvas', 'canvas');
 app.use(SwiperNext);
 app.mount('#app');
