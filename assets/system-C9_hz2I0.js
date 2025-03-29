@@ -1,1 +1,0 @@
-import{a3 as n,O as s}from"./index-CVvyLI3I.js";function c(e){return setTimeout(()=>{e()},1e3/30)}function f(e,t){n()&&e.groupSetData?e.groupSetData(t):t()}function l({selector:e,callback:t,options:r}){if(s()){const o=new IntersectionObserver(t,r);return document.querySelectorAll(e).forEach(a=>{o.observe(a)}),!0}return!1}export{f as g,l as i,c as r};
