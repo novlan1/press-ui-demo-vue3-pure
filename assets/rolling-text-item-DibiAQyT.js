@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o}from"./index-BC9YZb89.js";const s={data(){return{}},methods:{}},r={class:"demo-wrap"};function c(a,n,_,d,p,m){return t(),o("div",r," demo ")}const l=e(s,[["render",c]]);export{l as default};
