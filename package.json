@@ -10,7 +10,10 @@
   },
   "author": "novlan1",
   "scripts": {
+    "hook:vue": "node script/export-default-in-vue",
+    "predev": "npm run hook:vue",
     "dev": "vite",
+    "prebuild": "npm run hook:vue",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -38,6 +41,7 @@
   "devDependencies": {
     "@dcloudio/types": "^3.4.8",
     "@plugin-light/vite-plugin-alias-for-library": "^0.0.7",
+    "@plugin-light/vite-plugin-export-default-in-vue": "^0.0.3",
     "@plugin-light/vite-plugin-gen-version": "^0.0.7",
     "@plugin-light/vite-plugin-ifdef": "^0.0.7",
     "@rushstack/eslint-patch": "^1.8.0",
@@ -57,7 +61,7 @@
     "npm-run-all2": "^6.2.0",
     "sass": "^1.77.6",
     "typescript": "~5.6.2",
-    "vite": "^5.3.1",
+    "vite": "^6.3.5",
     "vite-plugin-babel": "^1.2.0",
     "vite-plugin-vue-devtools": "^7.3.1",
     "vue-tsc": "^2.0.21"
