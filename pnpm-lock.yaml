@@ -21,8 +21,8 @@ importers:
         specifier: ^1.3.13
         version: 1.3.20(@babel/parser@7.26.2)(@types/node@20.17.6)(html-webpack-plugin@4.5.2(webpack@4.47.0))(rollup@2.79.2)(sass@1.81.0)(terser@5.36.0)(typescript@5.6.3)(vue-template-compiler@2.7.16)(vue@3.5.13(typescript@5.6.3))(webpack@4.47.0)
       press-ui:
-        specifier: 3.0.12
-        version: 3.0.12
+        specifier: 3.0.13
+        version: 3.0.13
       qrcode.vue:
         specifier: ^3.4.1
         version: 3.6.0(vue@3.5.13(typescript@5.6.3))
@@ -3574,6 +3574,7 @@ packages:
 
   fs-write-stream-atomic@1.0.10:
     resolution: {integrity: sha512-gehEzmPn2nAwr39eay+x3X34Ra+M2QlVUTLhkXPjWdeO8RF9kszk116avgBJM3ZyNHgHXBNx+VmPaFC36k0PzA==}
+    deprecated: This package is no longer supported.
 
   fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
@@ -5112,8 +5113,8 @@ packages:
   press-ui@1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
 
-  press-ui@3.0.12:
-    resolution: {integrity: sha512-oaUY028XjJZH/VHqOJeqZCk4n3ZHZrOax47//hBVrKGJ9M8MN/vFUI+cUR6t7hkGyE81dLMWG8YiDZ73KUmDWQ==}
+  press-ui@3.0.13:
+    resolution: {integrity: sha512-QD0hX7Y3i1tVlBDkZAljyvA0bL435Im6+t4Jk6d1ihnBGVUtiF24m9wFZjkRVmDmtBUehS0H9Tk0f/oE4yjDBQ==}
     engines: {node: '>=14'}
 
   prettier-linter-helpers@1.0.0:
@@ -5836,6 +5837,10 @@ packages:
 
   t-comm@1.5.24:
     resolution: {integrity: sha512-oXEYGSxvAeYHLi0+XPlwHTxInfj+wJw1KdDB8Lyg73exM/RtQbXolMck7n8BvsbAnr2Z0HSxQCMCay4x/BeLEQ==}
+    hasBin: true
+
+  t-comm@1.5.28:
+    resolution: {integrity: sha512-FLmxGj3z4HRf07b22l6wsrKrUmBW/Ik+vwvgogbRoC9f9K5y42Vxg+Sq20UnOVJHYdChYu25WBsd1PObnIesBQ==}
     hasBin: true
 
   tapable@1.1.3:
@@ -12382,11 +12387,11 @@ snapshots:
 
   press-ui@1.3.39:
     dependencies:
-      t-comm: 1.5.24
+      t-comm: 1.5.28
     transitivePeerDependencies:
       - debug
 
-  press-ui@3.0.12: {}
+  press-ui@3.0.13: {}
 
   prettier-linter-helpers@1.0.0:
     dependencies:
@@ -13274,6 +13279,20 @@ snapshots:
       - debug
 
   t-comm@1.5.24:
+    dependencies:
+      '@babel/runtime': 7.26.0
+      '@commitlint/config-conventional': 17.8.1
+      axios: 1.7.7
+      cheerio: 1.0.0
+      commander: 10.0.1
+      cron-parser: 4.9.0
+      qs: 6.13.1
+      request: 2.88.2
+      tar: 6.2.1
+    transitivePeerDependencies:
+      - debug
+
+  t-comm@1.5.28:
     dependencies:
       '@babel/runtime': 7.26.0
       '@commitlint/config-conventional': 17.8.1
