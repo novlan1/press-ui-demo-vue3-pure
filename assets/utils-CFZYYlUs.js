@@ -1,1 +1,0 @@
-function n(){let e;return e=typeof window>"u",e}const s=n();function u(e){const t=typeof e;return e!==null&&(t==="object"||t==="function")}var r={};const o=()=>{if(typeof uni>"u")return!0;let e=!1;try{e=r.VUE_APP_NOT_UNI}catch{e=!1}return e};export{s as I,o as a,u as i};
