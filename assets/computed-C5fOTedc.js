@@ -1,1 +1,0 @@
-import{f as a}from"./fetch-data-DRDEOFNI.js";const n="https://tip-components-1251917893.cos.ap-guangzhou.myqcloud.com/rb/front-open-config__match__default__area_data.json";function c(t,o){return t.slice(0,+o)}const s={displayColumns:c};function r(){return a(n)}export{s as c,r as g};
