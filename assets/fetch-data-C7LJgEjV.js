@@ -1,0 +1,1 @@
+import{i as r}from"./index-CCB1KbBH.js";function a(n){return new Promise((e,i)=>{if(r()){fetch(n).then(t=>t.status===200?t.json():{}).then(t=>{e(t)}).catch(t=>{i(t)});return}uni.request({url:n,data:{},method:"GET",sslVerify:!0,success:({data:t})=>{e(t)},fail:t=>{i(t)}})})}export{a as f};
