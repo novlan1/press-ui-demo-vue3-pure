@@ -1,1 +1,0 @@
-import{am as f,an as s}from"./index-BiwYslXk.js";let o=0;function d(i){const n=`binded_${o}`;o+=1;function e(){const t=this;t[n]||(i.call(t,s,!0),t[n]=!0)}function a(){const t=this;t[n]&&(i.call(t,f,!1),t[n]=!1)}return{mounted:e,activated:e,deactivated:a,beforeDestroy:a}}export{d as B};
