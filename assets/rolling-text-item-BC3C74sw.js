@@ -1,1 +1,0 @@
-import{_ as e,c as t,o}from"./index-CwjeCCxc.js";const s={data(){return{}},methods:{}},r={class:"demo-wrap"};function c(a,n,_,d,p,m){return o(),t("div",r," demo ")}const l=e(s,[["render",c]]);export{l as default};
